@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-container {
+            position: relative;
+            font-size: 24px;
+            color: #333;
+          }
+          
+          .heading1, .heading2 {
+            overflow: hidden;
+          }
+          
+          /* Keyframes for the first heading */
+          @keyframes write1 {
+            from {
+              width: 0;
+            }
+            to {
+              width: 100%;
+            }
+          }
+          
+          /* Keyframes for the second heading */
+          @keyframes write2 {
+            from {
+              width: 0;
+            }
+            to {
+              width: 100%;
+            }
+            
+            /* Add these intermediate values to delay the animation of the second heading */
+            50% {
+              width: 0;
+            }
+            60% {
+              width: 0;
+            }
+            /* ... and so on for each character */
+          }
+          
+          /* Animation for the first heading */
+          .heading1 {
+            animation: write1 3s linear forwards;
+          }
+          
+          /* Animation for the second heading */
+          .heading2 {
+            animation: write2 3s linear forwards;
+          }
+          
+          
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <h1 class="heading1">First Heading</h1>
+        <h2 class="heading2">Second Heading</h2>
+      </div>
+      
+</body>
+</html>

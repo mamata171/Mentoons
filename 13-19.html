@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Poppins',sans-serif;
+        }
+        
+        body{
+            background-color: rgb(214, 203, 190);
+        
+        }
+        
+        .accordian{
+            margin:60px auto;
+            /* width: 800px; */
+        
+        }
+        
+        .accordian li{
+            list-style: none;
+            width: 100%;
+            margin: 0px;
+            padding: 10px;
+            /* border: 2px solid black; */
+        
+        }
+        
+        .accordian li label{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            font-size: 5vw;
+            font-weight: 500;
+            cursor: pointer;
+            font-stretch:ultra-expanded;
+        }
+        
+        label::before{
+            content: '+';
+            margin-right: 15px;
+        
+            width: 60px;
+            height: 60px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 60px;
+            font-weight: 200;
+            color: #000000;
+            font-stretch:ultra-expanded;
+        
+            border-radius: 50%;
+            outline: 2px solid #000000;
+            transition-property:
+                outline-offset, outline-color,
+                background-color;
+            /* transition-duration: .25s;   */
+           
+        }
+        
+        label:hover::before {
+            background-color: #000000;
+            color: aliceblue;
+        }
+        
+        input[type="checkbox"]{
+            display: none;
+        }
+        
+        .accordian .content{
+            color: #555;
+            width: 800px;
+            margin-left: 80px;
+           padding: 0 10px; 
+           line-height: 26px;
+           max-height: 0;
+           overflow: hidden;
+           transition: max-height 0.5s,padding 0.5s;
+        
+        }
+        
+        .accordian input[type="checkbox"]:checked + label + .content{
+            max-height: 400px;
+            padding: 10px 10px 20px;
+
+        }
+        
+        .accordian input[type="checkbox"]:checked + label::before{
+            content: "-";
+            
+        }
+    </style>
+
+</head>
+<body>
+    <ul class="accordian">
+
+        <li>
+            <input type="checkbox" name = "accordian" id="first">
+            <label for="first">Social Media Deaddiction</label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit exercitationem, fuga saepe aperiam magni harum? Repudiandae distinctio accusantium dolorum minima! Atque, earum incidunt harum molestiae ea, asperiores iusto 
+                    minima voluptatum culpa sapiente quis reiciendis amet maiores odio libero ducimus? Possimus nulla corrupti exercitationem nihil totam. Suscipit libero omnis voluptates reiciendis.</p>
+            </div>
+        </li>
+
+        <li>
+            <input type="checkbox" name = "accordian" id="second">
+            <label for="second">Cell Phone Deaddiction</label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit exercitationem, fuga saepe aperiam magni harum? Repudiandae distinctio accusantium dolorum minima! Atque, earum incidunt harum molestiae ea, asperiores iusto 
+                    minima voluptatum culpa sapiente quis reiciendis amet maiores odio libero ducimus? Possimus nulla corrupti exercitationem nihil totam. Suscipit libero omnis voluptates reiciendis.</p>
+            </div>
+        </li>
+
+        <li>
+            <input type="checkbox" name = "accordian" id="third">
+            <label for="third">Gaming Deaddiction</label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit exercitationem, fuga saepe aperiam magni harum? Repudiandae distinctio accusantium dolorum minima! Atque, earum incidunt harum molestiae ea, asperiores iusto 
+                    minima voluptatum culpa sapiente quis reiciendis amet maiores odio libero ducimus? Possimus nulla corrupti exercitationem nihil totam. Suscipit libero omnis voluptates reiciendis.</p>
+            </div>
+        </li>
+
+    </ul>
+</body>
+</html>
