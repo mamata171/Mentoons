@@ -1,0 +1,104 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+   
+}
+
+.home{
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url("Images/home-images/logo.png"); */
+    background: linear-gradient(rgb(230, 240, 51), rgb(64, 209, 64));
+    background-size: cover;
+    background-position: center;
+}
+
+.buttons{
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    float: right;
+    margin: 10px 20px; 
+  }
+
+  .buttons a{
+    padding: 8px;
+  }
+
+  .buttons button{
+    padding: 8px 8px;
+    /* border: 1px solid rgb(73, 222, 43); */
+    background: transparent;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    box-shadow: 2px 2px 2px rgb(78, 76, 76);
+
+    cursor: pointer;
+    font-weight:500;
+    font-size: larger;
+  }
+
+  .buttons button:hover{
+    background-color: rgb(236, 236, 145);
+  }
+  .content video{
+    margin-top: 0px !important;
+    width: 400px;
+    height: 300px;
+    /* border-radius: 10px; */
+    /* margin-left: 100px; */
+  }
+
+
+  .left-side p{
+    max-width: 400px;
+    text-align: justify;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+
+  .right-side h2{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    
+  }
+  .content{
+    margin-top: 0px !important;
+   display: flex;
+   justify-content:space-around;
+   /* justify-content: center; */
+
+   font-size: 1.6rem;
+  }
+
+  .marquee {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    animation: marquee 13s linear infinite;
+    width: 100%;
+    bottom: 0px;
+
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  .marquee img {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 150px;
+  } 
+  
+
+  
