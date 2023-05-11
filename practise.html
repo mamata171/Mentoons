@@ -54,15 +54,70 @@
           .heading2 {
             animation: write2 3s linear forwards;
           }
+
+          .rating {
+            display: inline-block;
+            font-size: 0;
+            position: relative;
+            color: #f6d800;
+          }
+          
+          .star {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            position: relative;
+            margin-right: 5px;
+            margin-left: -5px;
+          }
+          
+          .star:before {
+            content: "\f005";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #ccc;
+          }
+          
+          .star:after {
+            content: "\f005";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #f6d800;
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+          }
+          
+          .star:hover:after,
+          .star:hover ~ .star:after,
+          .star:focus:after,
+          .star:focus ~ .star:after {
+            opacity: 1;
+          }
+          
           
           
     </style>
 </head>
 <body>
-    <div class="text-container">
+    <!-- <div class="text-container">
         <h1 class="heading1">First Heading</h1>
         <h2 class="heading2">Second Heading</h2>
+      </div> -->
+
+      <div class="rating">
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
       </div>
+      
       
 </body>
 </html>

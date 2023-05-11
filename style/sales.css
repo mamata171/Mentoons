@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgb(153, 153, 246);
+}
+
+.img-div img{
+    height: 150px;
+    width: 200px;
+}
+
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+   
+}
+
+.flex-box .box{
+    margin: 10px 30px;
+}
+
+.flex-box img{
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.box button{
+    padding: 5px 10px;
+    border-radius: 8px;
+}
